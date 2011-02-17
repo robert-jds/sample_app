@@ -117,3 +117,28 @@ a.signup_button {
   border-radius: 7px;
 }
 
+
+/*** U S E R  S H O W  P A G E ***/
+
+table.profile {
+  widdth: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
