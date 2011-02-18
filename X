@@ -1,36 +1,47 @@
-You must use ANSICON 1.31 or later (http://adoxa.110mb.com/ansicon/) to use colour on Windows
-c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:239:in `require': c:/xampp/htdocs/rails/sample_app/app/controllers/users_controller.rb:18: unterminated string meets end of file (SyntaxError)
-c:/xampp/htdocs/rails/sample_app/app/controllers/users_controller.rb:18: syntax error, unexpected $end, expecting keyword_end
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:239:in `block in require'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:227:in `load_dependency'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:239:in `require'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:346:in `require_or_load'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:300:in `depend_on'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/dependencies.rb:216:in `require_dependency'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/engine.rb:138:in `block (2 levels) in eager_load!'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/engine.rb:137:in `each'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/engine.rb:137:in `block in eager_load!'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/engine.rb:135:in `each'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/engine.rb:135:in `eager_load!'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/application.rb:108:in `eager_load!'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/application/finisher.rb:41:in `block in <module:Finisher>'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/initializable.rb:25:in `instance_exec'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/initializable.rb:25:in `run'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/initializable.rb:50:in `block in run_initializers'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/initializable.rb:49:in `each'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/initializable.rb:49:in `run_initializers'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/application.rb:134:in `initialize!'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
-	from c:/xampp/htdocs/rails/sample_app/config/environment.rb:5:in `<top (required)>'
-	from c:/xampp/htdocs/rails/sample_app/spec/spec_helper.rb:3:in `require'
-	from c:/xampp/htdocs/rails/sample_app/spec/spec_helper.rb:3:in `<top (required)>'
-	from c:/xampp/htdocs/rails/sample_app/spec/controllers/users_controller_spec.rb:1:in `require'
-	from c:/xampp/htdocs/rails/sample_app/spec/controllers/users_controller_spec.rb:1:in `<top (required)>'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `block in load_spec_files'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `map'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load_spec_files'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/command_line.rb:18:in `run'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:55:in `run_in_process'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:46:in `run'
-	from c:/Ruby192/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:10:in `block in autorun'
+....................F.......................................
+
+Failures:
+
+  1) UsersController GET 'show' should have a profile image
+     Failure/Error: response.should have_selector("h1>img", :class => "gravatar")
+       expected following output to contain a <h1>img class='gravatar'/> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>Ruby on Rails Tutorial Sample App | Robert Sese</title>
+       <!-- [if lt IE 9]>
+       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+       <![endif]--><link href="/stylesheets/blueprint/screen.css?1297800302" media="screen" rel="stylesheet" type="text/css">
+       <link href="/stylesheets/blueprint/print.css?1297800302" media="print" rel="stylesheet" type="text/css">
+       <!--[if lt IE 8]><link href="/stylesheets/blueprint/ie.css?1297800302" media="screen" rel="stylesheet" type="text/css" /><![endif]--><link href="/stylesheets/custom.css?1297981695" media="screen" rel="stylesheet" type="text/css">
+       </head>
+       <body>
+           <div class="container">
+             <header><a href="/"><img alt="Sample App" class="round" src="/images/logo.png?1297800302"></a>
+         <nav class="round"><ul>
+       <li><a href="/">Home</a></li>
+             <li><a href="/help">Help</a></li>
+             <li><a href="/signin">Sign in</a></li>
+           </ul></nav></header><section class="round"><table class="profile" summary="Profile information"><tr>
+       <td class="main">
+             <h1>
+               <img alt="Gravatar" src="http://gravatar.com/avatar/cda980dc7f51f75d8eb174b0b02cbee9">
+               Robert Sese
+             </h1>
+           </td>
+           <td class="sidebar round">
+             <strong>Name</strong> Robert Sese<br><strong>URL</strong> <a href="/users/1">/users/1</a><br>
+       </td>
+         </tr></table></section><footer><nav class="round"><ul>
+       <li><a href="/about">About</a></li>
+             <li><a href="/contact">Contact</a></li>
+             <li><a href="http://news.railstutorial.org&gt;News&lt;/a&gt;&lt;/li&gt;%0A%20%20%20%20%20%20&lt;li&gt;&lt;a%20href=" http:>Rails Tutorial</a></li>
+           </ul></nav></footer>
+       </div> <!-- end #container -->
+         </body>
+       </html>
+     # ./spec/controllers/users_controller_spec.rb:33:in `block (3 levels) in <top (required)>'
+
+Finished in 7.16 seconds
+60 examples, 1 failure
